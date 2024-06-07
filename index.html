@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Bookmark</title>
+    <link rel="icon" type="image/png" href="images/bookmark-button-front-side.jpg">
+  </head>
+  <body>
+    <div class="container">
+      
+      <header>
+        <h1 class="h1selection text-center m-5 position-relative">Bookmarker</h1>
+      </header>
+      <!-- <hr /> -->
+      <div class="dashed-line"></div>
+      <div class="book-mark-title">
+        <h2 class="text-center">
+          <i class="fa-solid fa-bookmark icon1"></i> Bookmark your favorite
+          sites
+          <i class="fa-solid fa-bookmark icon2"></i>
+        </h2>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label
+        >
+        <input
+          oninput="validateInputs(this)"
+          type="text"
+          class="form-control"
+          id="websiteName"
+          placeholder="Bookmark Name "
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          ><i class="fa-solid fa-link pe-2"></i> Site Url</label
+        >
+        <input
+          oninput="validateInputs(this)"
+          type="email"
+          class="form-control"
+          id="siteUrl"
+          placeholder="Website URL"
+        />
+      </div>
+      <button onclick="addbookmark()"class="btn btn-submit mt-2 mb-5">
+        submit
+      </button>
+     <div class="dashed-line"></div>
+      <table id="myTableBody" class="table mt-4 text-center bg-light">
+
+      </table>
+    </div>
+
+    <script src="css/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

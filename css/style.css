@@ -1,0 +1,119 @@
+body {
+  background-color: #f7ecde;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: #352e28;
+  isolation: isolate;
+  padding-top: 0.5rem !important;
+  position: relative;
+  
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 20px;
+  background-color: #fec260;
+  position: absolute;
+  top: 45px;
+  z-index: -1;
+  left: 39.33%;
+  transition: all 0.5s;
+}
+@media (max-width: 480px) {
+  h1::after {
+    width: 250px;
+    top: 35px;
+    left: 5%;
+  }
+}
+
+/* Media query for medium screens (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1::after {
+    width: 250px;
+    top: 40px;
+    left: 15%;
+  }
+}
+
+.dashed-line {
+    border-top: 2px dashed black;
+    margin: 20px 0;
+}
+
+
+
+h1:hover:after {
+  height: 35px;
+  top: 20px;
+}
+.icon1 {
+  color: #3ea55b;
+}
+.icon2 {
+  color: #b2ac49;
+}
+.book-mark-title h2 {
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.form-label {
+  font-weight: bold;
+}
+.form-control:focus {
+  border-color: rgb(255, 187, 0); 
+  outline: rgb(254, 194, 96);
+  box-shadow: 0 0 5px rgba(202, 67, 5, 0.5);
+}
+.btn-submit{
+    background-color: rgb(187, 65, 32);
+    color: white;
+    position: relative;
+    width: 120px;
+    height: 20px;
+    padding-bottom: 30px;
+    left: 50%; 
+    transform: translate(-50%); 
+}
+.btn-submit:hover{
+    background-color: rgb(187, 65, 32);
+     color: white;
+
+}
+.buttonIcon1{
+  background-color: #8A9E23;
+  color: #f7ecde;
+}
+.buttonIcon1:hover {
+  background-color: #8A9E23;
+  color: #fafafa;
+}
+tbody{
+  text-align: center;
+}
+thead{
+  text-align: center;
+  font-weight: bold;
+}
+.buttonIcon2{
+  background-color: #eb1d36;
+  color: #ffffff;
+}
+.buttonIcon2:hover{
+  background-color: #D30820;
+  color: #ffffff;
+}
+.col-text{
+  
+  text-align: center; 
+  vertical-align: middle;
+}
